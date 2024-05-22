@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contar caracteres</title>
+    <link rel="stylesheet" href="./dist/build.css" />
+  </head>
+  <body class="bg-[#DCE1DE] font-poppins">
+    <section class="flex items-center justify-center h-screen">
+      <article
+        class="bg-[#216869] justify-center pr-4 pl-4 p-2 border rounded-md text-white w-full md:w-[800px]"
+      >
+        <span class="flex justify-center m-4">
+          <img src="./assets/images/example_logo.png" width="260px" alt="" />
+        </span>
+        <h1 class="flex justify-center text-center text-lg md:text-2xl">
+          Calculadora de caracteres com Javascript e Tailwind CSS
+        </h1>
+        <textarea
+          class="w-full mt-4 mb-4 text-gray-900 text-lg p-4 focus:ring-[#49A078] focus:ring-2 outline-none rounded-md"
+          name="texto"
+          id="texto"
+          rows="10"
+        ></textarea>
+        <section class="flex gap-2 justify-center mb-4">
+          <span><strong>Considerar espaços:</strong> </span>
+          <label for="sim">Sim</label>
+          <input
+            type="radio"
+            id="sim"
+            name="contar_espacos"
+            value="sim"
+            class="w-4"
+            checked
+          />
+          <label for="nao">Não</label>
+          <input 
+            type="radio" 
+            id="nao" 
+            name="contar_espacos" 
+            class="w-4"
+            value="nao" />
+        </section>
+        <section class="flex justify-center">
+          <button
+            class="bg-[#1F2421] p-6 pr-20 pl-20 rounded-md font-bold transform transition duration-300 hover:scale-110"
+            id="button"
+            type="button"
+            title="Contar caracteres"
+          >
+            Calcular Caracteres
+          </button>
+        </section>
+        <span class="m-4 flex justify-center text-xl" id="result"></span>
+      </article>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
